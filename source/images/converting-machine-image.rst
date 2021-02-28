@@ -3,6 +3,8 @@
 Converting the machine image
 ############################
 
+.. _converting-images:
+
 Please make sure you have converted your image to RAW before uploading it to
 our cloud. While QCOW2 images will also work, they will not support
 copy-on-write operations. As a result, launching compute instances from these

@@ -20,11 +20,11 @@ Fedora, Ubuntu and Debian. We also carry some Windows images on our cloud, both
 Windows server 2012 and 2016 and for licensing purposes we only support these
 windows images.
 
-For more information on our image service you can see the [Catalyst Cloud
-Documentation](https://docs.catalystcloud.nz/image.html) \
-If you are looking to convert images that cannot be found on the Catalyst Cloud
-you can find information on creating images for the cloud under the [openstack
-documentation](https://docs.openstack.org/image-guide/openstack-images.html)
+For more information on our image service you can see the
+:ref:`image section<images>` of these documents. If you are looking to convert
+images that cannot be found on the Catalyst Cloud you can find information on
+creating images for the cloud under the
+:ref:`converting images <converting-images>` section of the docs.
 
 *****************
 OS image versions
@@ -34,8 +34,8 @@ Catalyst Cloud's image service has many different operating system versions
 available. However it is important to keep in mind that each version of an
 operating system behaves differently and programs that run on one may not be
 compatible with others. This is particularly relevant when discussing Windows
-images because the updates that go on between each Windows versions change on a
-large scale. In cases like this, you may need to think twice about what to do
-with said programs. Can you find a newer version of your programs compatible
-with the new OS version? or can you find a matching replacement? has the
+images; because the updates that go on between each Windows versions change
+on a large scale. In cases like this, you may need to think twice about what to
+do with said programs. Can you find a newer version of your programs compatible
+with the new OS version? Or can you find a matching replacement? Has the
 program been deprecated between OS versions? etc.

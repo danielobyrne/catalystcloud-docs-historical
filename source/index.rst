@@ -32,7 +32,7 @@ Contents:
    object-storage
    orchestration
    tutorials
-   Migration Guide <migration>
+   Migration guide <migration>
    release-notes
    contributing
 

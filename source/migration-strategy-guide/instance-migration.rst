@@ -1,4 +1,4 @@
 #############################################
-Migrating your instance to the Catalyst Cloud
+Migrating resources to the Catalyst Cloud
 #############################################
 

@@ -2,6 +2,8 @@
 High availability
 #################
 
+.. _high-availability:
+
 This document outlines the physical infrastructure and software features that
 make the Catalyst Cloud highly available and resilient. It covers built-in
 features that are inherited by every project and services that can be used to
