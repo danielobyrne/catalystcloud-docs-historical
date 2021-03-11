@@ -6,7 +6,7 @@ Cloud native redesign
 
 This is the most difficult method of migration as it entails restructuring your
 entire system. A fully Cloud Native system should have each process or
-application containerised so that it's resources are securely isolated from
+application containerized so that it's resources are securely isolated from
 every other process on your system. It should also be dynamically orchestrated
 and managed and it should be microservice-oriented. This is the end goal of
 what a cloud platform should be, however this is not to say that every
@@ -43,7 +43,7 @@ Kubernetes
 **********
 
 Kubernetes is an open-source container orchestration engine (COE) for
-automating deployment, scaling, and management of containerised applications. A
+automating deployment, scaling, and management of containerized applications. A
 large portion of the hassle that comes with building a microservicing system
 and running a cloud native platform can be handled by kubernetes.
 

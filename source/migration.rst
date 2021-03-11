@@ -3,8 +3,8 @@ Migrating to the Catalyst Cloud
 ######################################
 
 For this section  of the documentation we have split the content into two
-parts. The first exaplains the different methods for migrating to a cloud
-solution, alongside the benefits of why you would want to migrage away from
+parts. The first explains the different methods for migrating to a cloud
+solution, alongside the benefits of why you would want to migrate away from
 other forms of resource management. This section is for those who are not
 familiar with Cloud systems and who want to know more about how to run their
 system on cloud architecture.
