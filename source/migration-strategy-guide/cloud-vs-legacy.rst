@@ -10,6 +10,7 @@ similarities to these methods. However, when taking a deeper look at the
 methods both conceptual and practically, you will find that there are some
 clear differences.
 
+
 In the past you may have purchased a series of virtual machines that already
 came in a specific size in terms of RAM and storage space; you would then pay a
 predefined amount for these virtual machines on a monthly basis. If you wanted

@@ -2,10 +2,17 @@
 Moving resources to the Catalyst Cloud
 #############################################
 
+These examples are intended for users who already have an understanding of how a
+cloud platform functions and are wanting to move resources from one cloud
+provider over to the Catalyst Cloud.
 
-********************************
+*******************************
+Instances
+*******************************
+
 Migrating ec2 instance from AWS
-********************************
+===============================
+
 From aws
 - If you previously imported your instances then you can just export them again using:
 
@@ -60,3 +67,40 @@ If you did not import your instances then you have to take the long road:
 
 - convert the image to RAW and re-upload to the cloud:
     - <link to documentation>
+
+
+*******************************
+Volumes
+*******************************
+
+- convert to image
+- download to local
+- upload to openstack project
+- convert to volume
+
+*******************************
+Networks
+*******************************
+
+- Recreate your network on the catalyst cloud. No way to port things over.
+
+*******************************
+Object storage
+*******************************
+
+- s3 compatible and you can just upload straight to it.
+
+*******************************
+Kubernetes clusters
+*******************************
+
+- Not entirely sure... If you have a template then you can just use that to
+  recreate your cluster?
+
+*******************************
+Database
+*******************************
+
+- Should be able to download the instructions to create your database and just
+  recompute them on your new one?
+
