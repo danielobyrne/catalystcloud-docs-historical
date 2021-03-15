@@ -41,12 +41,11 @@ geographically diverse cloud with no single point of failure. High availability
 also becomes a possibility for your systems when migrating to the Catalyst
 Cloud. Depending on the type of system you are planning to run you will either
 benefit from the clouds in built high availability or you may have to implement
-some protocols yourself, the most common of, having to do with load balancing,
-is discussed below.
+some protocols yourself, the most common of which is discussed below.
 
 More specific information on how high availability is implemented across
 services on the Catalyst Cloud can be found in the :ref:`best practice
-<high-availability>` section of these documents
+<high-availability>` section of this documentation
 
 ********************************************
 High availability using load balancers

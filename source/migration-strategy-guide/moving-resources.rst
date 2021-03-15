@@ -1,17 +1,37 @@
-#############################################
-Moving resources to the Catalyst Cloud
-#############################################
+###################################################
+Migrating existing resources to the Catalyst Cloud
+###################################################
 
-These examples are intended for users who already have an understanding of how a
-cloud platform functions and are wanting to move resources from one cloud
-provider over to the Catalyst Cloud.
+The following section contains information that is useful for users who are
+familiar with how a cloud platform functions and are wanting to migrate
+resources from an existing cloud solution over to the Catalyst Cloud. It should
+be noted that not all resources that you want to bring over to the cloud will
+be immediately compatible with our cloud infrastructure. You may need to change
+some of your resources before uploading them to the Catalyst Cloud, in order for
+them to function correctly. The most common example of this would be that you
+have to make sure that any images that you are uploading are able to interact
+with the cloud.
+
+We talk more in each section about the specific considerations that you need to
+think of before moving resources across, but it is something to be mindful of
+while you progress through this section.
+
+.. Note::
+
+  The following list of examples is still being expanded and we are working on
+  adding more tutorials as the need arises.
+
 
 *******************************
-Instances
+Compute instances
 *******************************
 
-Migrating ec2 instance from AWS
-===============================
+Migrating an ec2 instance from AWS
+==================================
+
+There are two methods for migrating an instance away from AWS, these depend on
+whether or not you originally imported your instance into AWS in the first place
+or whether you built your compute instances from scratch on the AWS cloud.
 
 From aws
 - If you previously imported your instances then you can just export them again using:

@@ -24,7 +24,7 @@ are not getting the most out of your monthly bill. On a cloud based system you
 only pay for what is used and you can change your resources on the fly. If you
 need to horizontally scale an instance you can simply spin up more compute
 nodes. If you need to increase the size of your block storage, then you can add
-a new volume to your instance. Or you can use our object storage service, which
+a new volume to your instance or you can use our object storage service, which
 scales dynamically, as an alternative.
 
 In a cloud environment your instances and other resources are scheduled by the
@@ -37,8 +37,8 @@ charged while an instance is active)
 
 
 After understanding these differences and the benefits that a Cloud platform
-can provide your business, the next step is understanding how to migrate to the
-Catalyst Cloud.
+can provide your business, the next step is understanding the different ways you
+can construct your system on the cloud.
 
 .. toctree::
    :maxdepth: 1

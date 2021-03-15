@@ -37,5 +37,5 @@ compatible with others. This is particularly relevant when discussing Windows
 images; because the updates that go on between each Windows versions change
 on a large scale. In cases like this, you may need to think twice about what to
 do with said programs. Can you find a newer version of your programs compatible
-with the new OS version? Or can you find a matching replacement? Has the
+with the new OS version? Or can you find a suitable replacement? Has the
 program been deprecated between OS versions? etc.
