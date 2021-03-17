@@ -64,7 +64,7 @@ which will export your instance image to an s3 bucket of your choice:
 
 .. code-block:: bash
 
-  $ $aws ec2 create-instance-export-task --instance-id <iNSERT INSTANCE ID> \
+  $ aws ec2 create-instance-export-task --instance-id <INSERT INSTANCE ID> \
   --target-environment vmware --export-to-s3-task DiskImageFormat=RAW, ContainerFormat=ova, S3Bucket=<INSERT BUCKET NAME>
 
   # The DiskImageFormat for this command must use RAW as it is the image type that is compatible with the cloud infrastructure.
@@ -72,10 +72,14 @@ which will export your instance image to an s3 bucket of your choice:
 Once we have our instance image uploaded to our S3 bucket, our next step is to
 transfer the image over to the Catalyst Cloud. Depending on the size of your
 image, you can can either download the image directly to your machine and upload
-it to the cloud via the command line, an example of which can be found in the
-:ref:`Uploading images <uploading-images>` section of the docs.
+it to the cloud via the command line. Or you can use the dashboard to upload
+your image straight to the catalyst Cloud from the s3 bucket. Examples for both
+of these methods can be found in the :ref:`Uploading images <uploading-images>`
+section of the docs.
 
-
+After your image is uploaded to the cloud, you just need to create a new
+instance using your image. Instructions for creating an instance can be found
+under the :ref:`Compute<quickstart_for_compute>` section of the documentation.
 
 Migrating resources created using an AMI
 -----------------------------------------------

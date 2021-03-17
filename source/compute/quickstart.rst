@@ -129,6 +129,8 @@ created instance.
 Booting an instance
 ===================
 
+.. _booting-instance:
+
 We are now ready to launch our first instance! Navigate to the **Instances**
 page.
 

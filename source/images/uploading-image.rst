@@ -13,8 +13,8 @@ Via the command line tools
 **************************
 .. Warning::
 
-  If the Image you are trying to upload is larger than 500MB you **must** use
-  the OpenStack CLI to upload it to the cloud. This is due to a cap being
+  If a local image you are trying to upload is larger than 500MB you **must**
+  use the OpenStack CLI to upload it to the cloud. This is due to a cap being
   placed on the dashboard.
 
 Ensure that you have the OpenStack command line tools
