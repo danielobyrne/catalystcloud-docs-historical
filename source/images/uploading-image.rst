@@ -2,6 +2,8 @@
 Uploading to the cloud
 ######################
 
+.. _uploading-images:
+
 Please make sure you have converted your image to RAW before uploading it to
 our cloud. The previous section provides instructions on how to convert images
 from other formats to RAW.

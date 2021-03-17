@@ -33,13 +33,52 @@ There are two methods for migrating an instance away from AWS, these depend on
 whether or not you originally imported your instance into AWS in the first place
 or whether you built your compute instances from scratch on the AWS cloud.
 
-From aws
-- If you previously imported your instances then you can just export them again using:
+Before we get into this however, you need to check that you have the following
+prerequisites ready:
 
-.. code-block::
+- Install the :ref:`openstackCLI<installing_cli_os>` and other dependencies
+- Source an :ref:`openRC file <configuring-the-cli>`
+- Have the `AWS CLI`_ installed
+- Have an Amazon S3 bucket ready to store some data.
 
-  $aws ec2 create-instance-export-task --instance-id i-02651f8e6d0b4378c \
-  --target-environment vmware --export-to-s3-task DiskImageFormat=VMDK,ContainerFormat=ova,S3Bucket=my-b1-bucket,S3Prefix=prefix
+.. _AWS CLI: https://docs.aws.amazon.com/cli/latest/userguide/welcome-versions.html
+
+Once you have all of these things ready, you can proceed with whichever strategy
+below is relevant to you.
+
+Migrating resources that were imported to AWS
+---------------------------------------------
+
+.. Note::
+
+  There are some additional restrictions for exporting an instance in this way,
+  the full list of which can be found on the `Amazon VM Import-Export`_
+  documentation.
+
+If when creating your resources on your AWS project you imported some resources
+from a previous solution, you will have the ability to export those same
+resources using the AWS CLI. The following command will create an export task
+which will export your instance image to an s3 bucket of your choice:
+
+.. _Amazon VM Import-Export: https://docs.aws.amazon.com/vm-import/latest/userguide/vmexport.html#vmexport-limits
+
+.. code-block:: bash
+
+  $ $aws ec2 create-instance-export-task --instance-id <iNSERT INSTANCE ID> \
+  --target-environment vmware --export-to-s3-task DiskImageFormat=RAW, ContainerFormat=ova, S3Bucket=<INSERT BUCKET NAME>
+
+  # The DiskImageFormat for this command must use RAW as it is the image type that is compatible with the cloud infrastructure.
+
+Once we have our instance image uploaded to our S3 bucket, our next step is to
+transfer the image over to the Catalyst Cloud. Depending on the size of your
+image, you can can either download the image directly to your machine and upload
+it to the cloud via the command line, an example of which can be found in the
+:ref:`Uploading images <uploading-images>` section of the docs.
+
+
+
+Migrating resources created using an AMI
+-----------------------------------------------
 
 If you did not import your instances then you have to take the long road:
 
